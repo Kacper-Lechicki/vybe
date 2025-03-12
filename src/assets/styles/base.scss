@@ -1,0 +1,20 @@
+@use '@styles/variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: $zero;
+  padding: $zero;
+}
+
+:root,
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: $full-vh;
+  font-family: Inter, Roboto, sans-serif;
+  font-size: $font-size_base;
+}

@@ -1,4 +1,5 @@
 @use '@styles/variables' as *;
+@use '@styles/colors' as c;
 
 *,
 *::before,
@@ -15,6 +16,43 @@ html {
 
 body {
   min-height: $full-vh;
-  font-family: Inter, Roboto, sans-serif;
+  font-family: 'Inter', 'Roboto', sans-serif;
   font-size: $font-size_base;
+  color: c.$text;
+  background: c.$bg-medium;
+}
+
+.container {
+  margin: $zero auto;
+  width: $full;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
 }
